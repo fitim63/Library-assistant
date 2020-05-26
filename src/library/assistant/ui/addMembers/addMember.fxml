@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="301.0" prefWidth="373.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="library.assistant.ui.addMembers.AddMemberController">
+    <stylesheets>
+        <URL value="@addmember.css" />
+    </stylesheets>
+   <children>
+      <VBox layoutY="10.0" prefHeight="291.0" prefWidth="381.0">
+         <children>
+            <JFXTextField fx:id="memberName" labelFloat="true" promptText="Member Name">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="memberID" labelFloat="true" layoutX="20.0" layoutY="30.0" promptText="Member ID">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="mobile" labelFloat="true" layoutX="10.0" layoutY="61.0" promptText="Mobile">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="email" labelFloat="true" layoutX="10.0" layoutY="92.0" promptText="Email">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <HBox prefHeight="59.0" prefWidth="378.0">
+               <children>
+                  <JFXButton fx:id="saveBtn" onAction="#addMember" prefHeight="47.0" prefWidth="250.0" stylesheets="@../../../assistant/ui/addBook/addBook.css" text="SAVE" />
+                  <JFXButton fx:id="cancelBtn" layoutX="10.0" layoutY="10.0" onAction="#cancel" prefHeight="47.0" prefWidth="251.0" stylesheets="@../../../assistant/ui/addBook/addBook.css" text="CANCEL" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

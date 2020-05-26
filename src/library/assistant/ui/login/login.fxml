@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="241.0" prefWidth="384.0" style="-fx-background-color: ;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.assistant.ui.login.LoginController">
+   <children>
+      <Label alignment="CENTER" layoutY="6.0" prefHeight="41.0" prefWidth="348.0" style="-fx-background-color: #546E7A;" text="Libray Assistant Login" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="LoginUsername" labelFloat="true" layoutX="71.0" layoutY="76.0" maxWidth="278.0" minWidth="179.0" prefHeight="31.0" prefWidth="278.0" promptText="Username" />
+      <JFXPasswordField fx:id="LoginPassword" labelFloat="true" layoutX="71.0" layoutY="128.0" maxWidth="278.0" minWidth="206.0" prefHeight="31.0" prefWidth="278.0" promptText="Password" />
+      <JFXButton layoutX="71.0" layoutY="187.0" onAction="#loginMethod" prefHeight="31.0" prefWidth="88.0" ripplerFill="WHITE" style="-fx-background-color: #546E7A;" styleClass="button2" stylesheets="@login.css" text="Log in" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="239.0" layoutY="187.0" onAction="#cancelMethod" prefHeight="31.0" prefWidth="88.0" style="-fx-background-color: #546E7A;" styleClass="button2" stylesheets="@login.css" text="Cancel" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
